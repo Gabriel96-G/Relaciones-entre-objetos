@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="ugY-dsCw96GOoAytW-k5">
+    <mxGraphModel dx="2528" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Persona" vertex="1">
+          <mxGeometry height="490" width="320" x="90" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-2" parent="uf8GwgcAMMhWUwRJRRT2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;- nombre: String&lt;br/&gt;- apellido: String&lt;br/&gt;- pasaporte: Pasaporte&lt;br/&gt;- mascota: Mascota&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="84" width="320" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-3" parent="uf8GwgcAMMhWUwRJRRT2-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="320" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-4" parent="uf8GwgcAMMhWUwRJRRT2-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ Persona(nombre: String, apellido: String,&lt;br&gt;  pasaporte: Pasaporte, mascota: Mascota)&lt;br&gt;&lt;br&gt;+ getNombre(): String&lt;br&gt;+ setNombre(nombre: String): void&lt;br&gt;+ getApellido(): String&lt;br&gt;+ setApellido(apellido: String): void&lt;br&gt;+ getPasaporte(): Pasaporte&lt;br&gt;+ getMascota(): Mascota&lt;br&gt;&lt;br&gt;+ sacarPasaporte(numero: String,&lt;br&gt;  nacionalidad: String,&lt;br&gt;  fechaEmision: LocalDate,&lt;br&gt;  fechaVencimiento: LocalDate,&lt;br&gt;  estaVigente: boolean): void&lt;br&gt;&lt;br&gt;+ tomarVuelo(pais: String): void&lt;br&gt;+ adoptarMascota(mascota: Mascota): void&lt;br&gt;+ jugar(): void&lt;br&gt;+ soldar(maquinaSoldar: MaquinaSoldar,&lt;br&gt;  metal: String): void&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="372" width="320" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Pasaporte" vertex="1">
+          <mxGeometry height="490" width="450" x="-570" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-6" parent="uf8GwgcAMMhWUwRJRRT2-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;- numero: String&lt;br/&gt;- nacionalidad: String&lt;br/&gt;- fechaEmision: LocalDate&lt;br/&gt;- fechaVencimiento: LocalDate&lt;br/&gt;- estaVigente: boolean&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="104" width="450" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-7" parent="uf8GwgcAMMhWUwRJRRT2-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="450" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-8" parent="uf8GwgcAMMhWUwRJRRT2-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ Pasaporte(numero: String,&lt;br&gt;  nacionalidad: String,&lt;br&gt;  fechaEmision: LocalDate,&lt;br&gt;  fechaVencimiento: LocalDate,&lt;br&gt;  estaVigente: boolean)&lt;br&gt;&lt;br&gt;+ getNumero(): String&lt;br&gt;+ setNumero(numero: String): void&lt;br&gt;+ getNacionalidad(): String&lt;br&gt;+ setNacionalidad(nacionalidad: String): void&lt;br&gt;+ getFechaEmision(): LocalDate&lt;br&gt;+ setFechaEmision(fechaEmision: LocalDate): void&lt;br&gt;+ getFechaVencimiento(): LocalDate&lt;br&gt;+ setFechaVencimiento(fechaVencimiento: LocalDate): void&lt;br&gt;+ isEstaVigente(): boolean&lt;br&gt;+ setEstaVigente(estaVigente: boolean): void&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="352" width="450" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Mascota" vertex="1">
+          <mxGeometry height="490" width="450" x="570" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-11" parent="uf8GwgcAMMhWUwRJRRT2-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;- nombre: String&lt;br/&gt;- especie: String&lt;br/&gt;- edad: int&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="104" width="450" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-12" parent="uf8GwgcAMMhWUwRJRRT2-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="450" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-13" parent="uf8GwgcAMMhWUwRJRRT2-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;+ Pasaporte(numero: String,&lt;br/&gt;  nacionalidad: String,&lt;br/&gt;  fechaEmision: LocalDate,&lt;br/&gt;  fechaVencimiento: LocalDate,&lt;br/&gt;  estaVigente: boolean)&lt;br/&gt;&lt;br/&gt;+ getNumero(): String&lt;br/&gt;+ setNumero(numero: String): void&lt;br/&gt;+ getNacionalidad(): String&lt;br/&gt;+ setNacionalidad(nacionalidad: String): void&lt;br/&gt;+ getFechaEmision(): LocalDate&lt;br/&gt;+ setFechaEmision(fechaEmision: LocalDate): void&lt;br/&gt;+ getFechaVencimiento(): LocalDate&lt;br/&gt;+ setFechaVencimiento(fechaVencimiento: LocalDate): void&lt;br/&gt;+ isEstaVigente(): boolean&lt;br/&gt;+ setEstaVigente(estaVigente: boolean): void&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="352" width="450" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-14" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MaquinaSoldar" vertex="1">
+          <mxGeometry height="510" width="450" x="25" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-15" parent="uf8GwgcAMMhWUwRJRRT2-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;- marca: String&lt;br/&gt;- modelo: String&lt;br/&gt;- potencia: int&lt;br/&gt;- metales: String[]&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="104" width="450" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-16" parent="uf8GwgcAMMhWUwRJRRT2-14" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="450" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-17" parent="uf8GwgcAMMhWUwRJRRT2-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ MaquinaSoldar(marca: String,&lt;br/&gt;  modelo: String,&lt;br/&gt;  potencia: int,&lt;br/&gt;  metales: String[])&lt;br/&gt;&lt;br/&gt;+ getMarca(): String&lt;br/&gt;+ setMarca(marca: String): void&lt;br/&gt;+ getModelo(): String&lt;br/&gt;+ setModelo(modelo: String): void&lt;br/&gt;+ getPotencia(): int&lt;br/&gt;+ setPotencia(potencia: int): void&lt;br/&gt;+ getMetales(): String[]&lt;br/&gt;+ setMetales(metales: String[]): void&lt;br/&gt;+ soldar(metal: String): void&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="372" width="450" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-25" edge="1" parent="1" style="endArrow=diamond;endFill=1;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-120" y="470" as="sourcePoint" />
+            <mxPoint x="90" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-26" edge="1" parent="1" style="startArrow=diamond;startFill=0;endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="450" as="sourcePoint" />
+            <mxPoint x="570" y="449.92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-27" edge="1" parent="1" style="startArrow=none;endArrow=classic;dashed=1;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.484;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" target="uf8GwgcAMMhWUwRJRRT2-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="242.8" y="640" as="sourcePoint" />
+            <mxPoint x="710" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;code&gt;1&lt;/code&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="10" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;code&gt;0..1&lt;/code&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-90" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;code&gt;0..*&lt;/code&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="415" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="uf8GwgcAMMhWUwRJRRT2-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;code&gt;0..1&lt;/code&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="500" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

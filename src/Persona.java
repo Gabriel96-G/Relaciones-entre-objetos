@@ -3,14 +3,17 @@ import java.time.LocalDate;
 public class Persona {
 
     private String nombre;
-    private String apellidos;
+    private String apellido;
     private Pasaporte pasaporte;
     private Mascota mascota;
 
-    public Persona(String nombre, String apellidos) {
+    public Persona(String nombre, String apellido, Pasaporte pasaporte, Mascota mascota) {
         this.nombre = nombre;
-        this.apellidos = apellidos;
+        this.apellido = apellido;
+        this.pasaporte = null;
+        this.mascota = null;
     }
+
 
     public String getNombre() {
         return nombre;
@@ -21,11 +24,11 @@ public class Persona {
     }
 
     public String getApellidos() {
-        return apellidos;
+        return apellido;
     }
 
     public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+        this.apellido = apellidos;
     }
 
     public Pasaporte getPasaporte() {
@@ -57,7 +60,7 @@ public class Persona {
 
             System.out.println(
                     nombre + " "
-                            + apellidos
+                            + apellido
                             + " toma un vuelo a "
                             + pais + "."
             );
@@ -66,7 +69,7 @@ public class Persona {
 
             System.out.println(
                     nombre + " "
-                            + apellidos
+                            + apellido
                             + " no puede tomar el vuelo, ya que su pasaporte no está vigente."
             );
         }
@@ -82,7 +85,7 @@ public class Persona {
 
             System.out.println(
                     nombre + " "
-                            + apellidos
+                            + apellido
                             + " juega con "
                             + mascota.getNombre() + "."
             );
@@ -91,7 +94,7 @@ public class Persona {
 
             System.out.println(
                     nombre + " "
-                            + apellidos
+                            + apellido
                             + " no tiene una mascota con quien jugar."
             );
         }

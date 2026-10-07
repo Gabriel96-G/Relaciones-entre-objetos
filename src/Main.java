@@ -6,14 +6,17 @@ public class Main {
 
         Persona persona1 = new Persona(
                 "Romario",
-                "Salas Cerdas"
+                "Salas Cerdas",
+                null,
+                null
         );
 
         Persona persona2 = new Persona(
                 "Alejandro",
-                "Medrano Ruiz"
+                "Medrano Ruiz",
+                null,
+                null
         );
-
 
         persona1.sacarPasaporte(
                 "CR123456",
